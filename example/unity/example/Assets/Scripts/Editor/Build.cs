@@ -18,7 +18,7 @@ public class Build : MonoBehaviour {
     private static readonly string iosExportPath =
         Path.GetFullPath(Path.Combine(ProjectPath, "../../ios/UnityExport"));
 
-    [MenuItem("ReactNative/Export Android (Unity 2019.3.*) %&n", false, 1)]
+    [MenuItem("ReactNative/Export Android (Unity 2019.4.*) %&n", false, 1)]
     public static void DoBuildAndroidLibrary() {
         DoBuildAndroid(Path.Combine(apkPath, "unityLibrary"));
         
@@ -73,7 +73,7 @@ public class Build : MonoBehaviour {
         File.WriteAllText(manifest_file, manifest_text);
     }
 
-    [MenuItem("ReactNative/Export IOS (Unity 2019.3.*) %&i", false, 3)]
+    [MenuItem("ReactNative/Export IOS (Unity 2019.4.*) %&i", false, 3)]
     public static void DoBuildIOS() {
         if (Directory.Exists(iosExportPath)) {
             Directory.Delete(iosExportPath, true);
