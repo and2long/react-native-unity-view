@@ -429,3 +429,5 @@ $RECYCLE.BIN/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.gitignore.io/api/linux,xcode,macos,windows,reactnative,intellij+all
+
+example/android/UnityExport
