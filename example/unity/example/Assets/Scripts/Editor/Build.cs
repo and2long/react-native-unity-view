@@ -25,12 +25,7 @@ public class Build : MonoBehaviour {
         Copy(Path.Combine(apkPath, "launcher/src/main/res"), Path.Combine(androidExportPath, "src/main/res"));
     }
     
-    [MenuItem("ReactNative/Export Android legacy %&a", false, 2)]
-    public static void DoBuildAndroidLegacy() {
-        DoBuildAndroid(Path.Combine(apkPath, Application.productName));
-    }
-
-    public static void DoBuildAndroid(String buildPath) {
+    private static void DoBuildAndroid(String buildPath) {
         if (Directory.Exists(apkPath)) {
             Directory.Delete(apkPath, true);
         }
@@ -73,7 +68,7 @@ public class Build : MonoBehaviour {
         File.WriteAllText(manifest_file, manifest_text);
     }
 
-    [MenuItem("ReactNative/Export IOS (Unity 2022.3.*) %&i", false, 3)]
+    [MenuItem("ReactNative/Export IOS (Unity 2022.3.*) %&i", false, 2)]
     public static void DoBuildIOS() {
         if (Directory.Exists(iosExportPath)) {
             Directory.Delete(iosExportPath, true);
