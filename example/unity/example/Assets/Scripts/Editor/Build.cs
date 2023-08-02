@@ -76,7 +76,7 @@ public class Build : MonoBehaviour {
 
         EditorUserBuildSettings.iOSXcodeBuildConfig = XcodeBuildConfig.Release;
 
-        var options = BuildOptions.AcceptExternalModificationsToPlayer;
+        var options = BuildOptions.AllowDebugging;
         var report = BuildPipeline.BuildPlayer(
             GetEnabledScenes(),
             iosExportPath,
