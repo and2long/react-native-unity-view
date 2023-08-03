@@ -60,7 +60,7 @@ public class Build : MonoBehaviour {
         build_text = build_text.Replace("bundle {", "splits {");
         build_text = build_text.Replace("enableSplit = false", "enable false");
         build_text = build_text.Replace("enableSplit = true", "enable true");
-        build_text = build_text.Replace("implementation fileTree(dir: 'libs', include: ['*.jar'])", "implementation ':unity-classes'");
+        build_text = build_text.Replace("implementation fileTree(dir: 'libs', include: ['*.jar'])", "api fileTree(dir: 'libs', includes: ['*.jar'])");
         // build_text = Regex.Replace(build_text, @"\n.*applicationId '.+'.*\n", "\n");
         File.WriteAllText(build_file, build_text);
 
