@@ -13,7 +13,7 @@ to make it work with React Native >= 0.60.
 
 ## Install
 
-`yarn add @asmadsen/react-native-unity-view`
+`yarn add @and2long/react-native-unity-view`
 
 ## Configuration
 

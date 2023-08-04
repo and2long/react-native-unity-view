@@ -14,7 +14,7 @@ import {
   View
 } from 'react-native';
 
-import UnityView, { UnityModule } from '@asmadsen/react-native-unity-view';
+import UnityView, { UnityModule } from '@and2long/react-native-unity-view';
 import {
   Colors
 } from 'react-native/Libraries/NewAppScreen';

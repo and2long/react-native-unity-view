@@ -1,4 +1,4 @@
-package no.asmadsen.unity.view;
+package no.and2long.unity.view;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
