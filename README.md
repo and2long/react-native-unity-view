@@ -6,10 +6,10 @@ __*If you're using a Unity version older than 2019.3 you can only export to andr
 
 ## Notice
 
-This is a fork of [https://github.com/f111fei/react-native-unity-view](https://github.com/f111fei/react-native-unity-view)
+This is a fork of [https://github.com/asmadsen/react-native-unity-view](https://github.com/asmadsen/react-native-unity-view)
 to make it work with React Native >= 0.60.
 
-**This project may or may not be updated depending on the further use of it at my workplace, however feel free to fork it** 
+**This project may or may not be updated depending on the further use of it at my workplace, however feel free to fork it**
 
 ## Install
 
@@ -37,7 +37,7 @@ configuration expects that you place your Unity Project in the following positio
 
 #### Add Unity Build scripts
 
-Copy [Build.cs](/template/Build.cs) and [XCodePostBuild.cs](/template/XCodePostBuild.cs) and place them in 
+Copy [Build.cs](/template/Build.cs) and [XCodePostBuild.cs](/template/XCodePostBuild.cs) and place them in
 `unity/<Your Unity Project>/Assets/Scripts/Editor/`
 
 *If you want to place your Unity Project somewhere else you will have to change the following paths which is relative to
@@ -57,12 +57,12 @@ the Untiy Project*
 
 Under `Other Settings` make sure `Scripting Backend` is set to `IL2CPP`, and `ARM64` is checked under `Target Architectures`.
 
-![Android Configruation](docs/android-player-settings.png) 
+![Android Configruation](docs/android-player-settings.png)
 
 Under `Other Settings` make sure `Auto Graphics API` is unchecked, and the list only contains `OpenGLES3` and `OpenGLES2` in that order.
 
-![Android graphics](docs/android-graphics.png) 
- 
+![Android graphics](docs/android-graphics.png)
+
 
 ##### Additional changes for iOS Platform
 
@@ -82,35 +82,13 @@ Then the exported artifacts will be placed in a folder called `UnityExport` insi
 
 Add the contents of the [Assets](template/Assets) folder, to your Unity project.
 
-*You will have to rebuild for changes to appear in React Native.* 
+*You will have to rebuild for changes to appear in React Native.*
 
 ### Configure Native Build
 
 #### Android Build
 
 To allow for the project to recognize the `UnityExport` folder you will have to add two lines to `android/settings.gradle`.
-
-1. Add the following to the `android/build.gradle`
-```
-flatDir {
-    dirs "${project(':UnityExport').projectDir}/libs"
-}
-```
-So it looks like this
-```
-// [..]
-allprojects {
-    repositories {
-        // [..]
-        flatDir {
-            dirs "${project(':UnityExport').projectDir}/libs"
-        }
-    }
-}
-```
-
-2. Add these two lines to `android/settings.gradle`
-
 ```
 include ":UnityExport"
 project(":UnityExport").projectDir = file("./UnityExport")
