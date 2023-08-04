@@ -272,7 +272,7 @@ PODS:
   - React-jsinspector (0.66.5)
   - React-logger (0.66.5):
     - glog
-  - react-native-unity-view (0.0.7):
+  - react-native-unity-view (1.0.0):
     - React
   - React-perflogger (0.66.5)
   - React-RCTActionSheet (0.66.5):

@@ -1,3 +1,9 @@
-example
-scripts
-docs
+/example/
+/scripts/
+/docs/
+/node_modules/
+/src
+/template
+.DS_Store
+.idea
+tsconfig.json
