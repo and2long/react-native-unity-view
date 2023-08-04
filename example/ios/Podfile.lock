@@ -272,7 +272,7 @@ PODS:
   - React-jsinspector (0.66.5)
   - React-logger (0.66.5):
     - glog
-  - react-native-unity-view (1.0.0):
+  - react-native-unity-view (1.0.1):
     - React
   - React-perflogger (0.66.5)
   - React-RCTActionSheet (0.66.5):
@@ -511,7 +511,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 50a73168582868421112609d2fb155e607e34ec8
   React-jsinspector: 953260b8580780a6e81f2a6d319a8d42fd5028d8
   React-logger: fa4ff1e9c7e115648f7c5dafb7c20822ab4f7a7e
-  react-native-unity-view: a9b27d64094791a0691a59e6cf29f152c3857064
+  react-native-unity-view: 40a6b2192c0e17f7b8663ec6f4ac65f9be50f58c
   React-perflogger: 169fb34f60c5fd793b370002ee9c916eba9bc4ae
   React-RCTActionSheet: 2355539e02ad5cd4b1328682ab046487e1e1e920
   React-RCTAnimation: 150644a38c24d80f1f761859c10c727412303f57
